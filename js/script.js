@@ -220,6 +220,7 @@ const ARTICLE_DATA = [
       "Hin heimsfræga og talsvert alræmda söngkonan Taylor Swift hefur unnið hörðum höndum að því að berjast fyrir réttindum listamanna til að eiga verk sín sjálfir. Hún hefur einnig talað um að hún sjálf sé á móti notkun gervigreindar þar sem hafi hún lent í að gervigreindarmyndum af henni hafi verið dreift, hvort sem það var í pólitískum tilgangi eða nokkurs konar klámmyndir.",
       "En nú hefur hún sætt miklu ámæli fyrir að nota ai myndbönd til að auglýsa nýju plötuna sína „The life of a showgirl” sem kom út nýverið. Aðdáendur sem aðrir hafa fordæmt hana fyrir hræsnina sem þeim finnst felast í því að notast við gervigreind eftir ummæli hennar, ekki hvað síst þar sem það tekur vinnu af alvöru listamönnum.",
       "Það er þó erfitt er að finna upprunalegu myndböndin og því varla hægt að segja til um hvort það sé bara verið að reyna að koma á hana sök eða hvort það sé eitthvað til í þessum ásökunum. En eitt er alveg víst og það er að gervigreind var notuð við gerð þessara myndbanda sama hvort teymi Swift var á bak við það eður ei.",
+      { type: "image", src: "images/extra_five_media.png", alt: "Media alt", caption: "Media Caption" },
     ]
   },
   {
@@ -231,7 +232,7 @@ const ARTICLE_DATA = [
     "collections": ["extras"],
     "featured": false,
     "cardImage": {
-      "src": "images/extra_six_hero.png",
+      "src": "images/thinkingrobot.jpg",
       "alt": "Image alt"
     },
     "heroImage": null,
