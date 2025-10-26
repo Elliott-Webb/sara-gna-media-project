@@ -15,7 +15,7 @@
     : [];
   var statementText = (typeof quizStatement === 'string' && quizStatement.trim().length)
     ? quizStatement
-    : 'Is the following image True or False for the statement?';
+    : 'Er eftirfarandi mynd sönn eða röng fyrir fullyrðinguna?';
 
   var index = 0;
   var score = 0;
@@ -46,7 +46,7 @@
       if(btnFalse) btnFalse.disabled = true;
       if(skip){
         skip.disabled = false;
-        skip.textContent = 'Restart';
+        skip.textContent = 'Endurræstu';
       }
       if(viewAnswers) viewAnswers.style.display = '';
       // reveal final score only now
@@ -55,7 +55,7 @@
       }
       if(scoreEl) scoreEl.textContent = String(score);
       if(totalEl) totalEl.textContent = String(items.length);
-      msg.textContent = 'Quiz complete! View answers or restart.';
+      msg.textContent = 'Prófinu lokið! Skoðaðu svörin eða byrjaðu aftur.';
       return;
     }
 
@@ -68,7 +68,7 @@
     if(btnTrue) btnTrue.disabled = false;
     if(btnFalse) btnFalse.disabled = false;
     if(skip){
-      skip.textContent = 'Next';
+      skip.textContent = 'Næst';
       skip.disabled = false;
     }
     if(viewAnswers) viewAnswers.style.display = 'none';
@@ -83,7 +83,7 @@
       score += 1;
     }
     // Show what the correct answer was for this item
-    msg.textContent = 'Correct answer: ' + (item.correct ? 'True' : 'False');
+    msg.textContent = 'Rétt svar: ' + (item.correct ? 'AI' : 'Alvöru');
     if(btnTrue) btnTrue.disabled = true;
     if(btnFalse) btnFalse.disabled = true;
     setTimeout(function(){ index += 1; render(); }, 700);
@@ -130,7 +130,7 @@
         var img = document.createElement('img');
         img.style = 'max-height:100px;max-width:200px;';
         img.src = it.src;
-        p.textContent = (i+1) + '. Correct answer: ' + (it.correct ? 'True' : 'False');
+        p.textContent = (i+1) + '. Rétt svar: ' + (it.correct ? 'AI' : 'Alvöru');
         container.appendChild(p);
         container.appendChild(img);
         list.appendChild(container)

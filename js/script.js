@@ -2,18 +2,18 @@ const ARTICLE_DATA = [
   {
     "id": "article-open-one",
     "title": "Ógnvekjandi hlið gervigreindar á andlega heilsu",
-    "author": "Gervigreind Post",
-    "date": "2025-10-09",
-    "summary": "Description",
+    "author": "Gervigreindar ritið",
+    "date": "2025-10-19",
+    "summary": "Notkun gervigreindar í stað mannlegrar hjálpar",
     "collections": ["home"],
     "featured": true,
     "cardImage": {
-      "src": "images/thinkingrobot.jpg",
-      "alt": "Illustration of a thinking robot"
+      "src": "images/article_one_head.png",
+      "alt": "Image Alt"
     },
     "heroImage": {
-      "src": "images/site_logo.png",
-      "alt": "Gervigreind Post logo"
+      "src": "images/article_one_head.png",
+      "alt": "Gervigreindar ritið logo"
     },
     "blocks": [
       "Getur gervigreind komið í staðinn fyrir alvöru vináttu og mannleg tengsl eða er hún að hafa skaðleg og óafturkvæm áhrif á hvernig við myndum sambönd? Æ meira hefur borið á því að gervigreind sé notuð sem stuðnings- eða meðferðartæki við andlegum eða geðrænum kvillum. Sagt er að gervigreindin geti nýst sem meðferðaraðili á netinu, til aðstoðar við umönnun heilabilaðra og einhverfra, sem stuðningur við meðferð á kynferðislegum vandamálum. Þetta getur hljómað einkennilega en þau sem mæla með þessu telja að með þessu móti sé hægt að ná til sjúklinga á svæðum sem annars væru ekki þjónustaðir. Gervigreindin er einnig talin létta álaginu af mannlegum meðferðaraðilum og veiti sjúklingum betri þjónustu. Hins vegar er ekki hægt að horfa framhjá því að þetta eru eingöngu forrituð tæki sem hafa ekki mannlega innsýn eða skynsemi. Þessari notkun geta fylgt siðferðileg álitamál, vandamál sé að tryggja örugga geymslu gagna og því fylgi hætta á misnotkun þeirra. Þá eigi vélarnar erfiðara með að meta hvenær sé eðlilegt að leyfa manneskju sjálfri að takast á við ákveðið vandamál, þær hafi hugsanlega ekki skýrar hugmyndir um sjálfræði eða hugmyndir sem tengjast slíku. Upp hafa komið mál þar sem notkun gervigreindar hefur leitt fólk til sjálfsvígs. Hvort sem það sé því gervigreindin brást ekki rétt við þegar notandi minntist á vanlíðan eða áætlanir sínar um að fremja sjálfsvíg, eða að sá karakter sem átt var í samskiptum við hreinlega hvatti notandan til þess (í nokkurs konar hlutverkaleik) þá er ekki hægt að líta framhjá þeirri staðreynd að ef ekki væri fyrir gervigreindina gætu þessir unglingar, sem taldir eru hafa svipt sig lífi út frá þessum spjallsíðum, enn verið á lífi í dag. Þó það sé kannski ekki nógu algengt til að alhæfa að notkun gervigreindar sé líkleg til að ýta undir sjálfsvígstíðni má líta á mörg önnur dæmi þar sem ofnotkun forrita líkt og ChatGPT, Character ai og þeirra líkra hefur leitt til alvarlegra andlegra vandamála.",
@@ -24,14 +24,14 @@ const ARTICLE_DATA = [
   {
     "id": "article-open-two",
     "title": "Falsanir",
-    "author": "Gervigreind Post",
-    "date": "2025-10-12",
-    "summary": "fake news",
+    "author": "Gervigreindar ritið",
+    "date": "2025-10-14",
+    "summary": "Vandræði vegna framfara gervigreindar",
     "collections": ["home"],
     "featured": false,
     "cardImage": {
-      "src": "images/thinkingrobot.jpg",
-      "alt": "Thinking robot"
+      "src": "images/article_two_head.png",
+      "alt": "Alt Text"
     },
     "heroImage": null,
     "blocks": [
@@ -42,32 +42,33 @@ const ARTICLE_DATA = [
   {
     "id": "article-open-three",
     "title": "Skaðleg umhverfisáhrif",
-    "author": "Factual News",
+    "author": "Gervigreindar ritið",
     "date": "2025-10-13",
-    "summary": "Cost",
+    "summary": "Hvað er gervigreindin að gera við jörðina okkar?",
     "collections": ["home"],
     "featured": false,
     "cardImage": {
-      "src": "images/thinkingrobot.jpg",
-      "alt": "Thinking robot"
+      "src": "images/article_three_head.png",
+      "alt": "Alt Text"
     },
     "heroImage": null,
     "blocks": [
       "Eitt af því sem áhugafólk um gervigreind bendir á sem meðmæli með henni er að hún getur nýst til framfara við vísindarannsóknir ýmiss konar, þar á meðal rannsóknir og aðgerðir til að takast á við yfirvofandi umhverfis hörmungar. Í þessu felst ákveðin kaldhæðni þar sem flestir vita að þau gagnaver sem hýsa gervigreindartölvurnar eru ekki umhverfisvæn. Rannsóknir hafi sýnt að þau hafi þvert á móti mjög slæm áhrif á umhverfið og þó fer notkun þeirra fer sífellt vaxandi.\nEn af hverju er eins og öllum sé sama?",
       "Hugsanlegt svar er að fólk átti sig í fyrsta lagi ekki á umfangi vandans fyrr en það heyri af því að fólk sé beðið að takmarka sturtuferðir til að spara vatn.\nHins vegar getur það líka verið þar sem fólk átti sig ekki á því að þetta sé iðnaður, líkt og verksmiðjuiðnaður fyrri tíma sem spúði mengandi reyk yfir almenning. Nú sé birtingarmyndin bara önnur og mengandi eða spillandi áhrif ekki eins sýnileg. Margir átti sig ekki á að það þurfi að kæla gagnaverin, stundum séu notuð mengandi efni í tækin auk þess sem það þurfa að vera til staðir og orka til að reka og geyma ský og aðrar veflausnir. Reyndin er sú að kolefnisfótspor stórra gagnavera eru orðin gríðarlega stór enda hefur orkunotkun þeirra í Bandaríkjunum þrefaldast síðasta áratuginn og búist er við að það þrefaldist aftur á næstu þremur árum. Talið er að rafmagnsnotkun þessara gagnavera fari brátt fram úr orkunotkun landa eins og Bretlands, Spánar og Ítalíu.\nMeð aukinni hamfarahlýnun munu áhrifin af gagnaverunum sem drífa gervigreindina verða sífellt meiri því þá mun þurfa enn meira vatn til að kæla þau niður. Talið er að árið 2027 verði nýting tengd gervigreind í Bandaríkjunum á vatni og orku um fjórum til sex sinnum meiri en almenn notkun Danmerkur.",
+      { type: "video", src: "media/antiai.mp4", title: "Tik Tok" },
     ]
   },
   {
     "id": "article-open-four",
     "title": "Bylting í fjölmiðlanotkun",
-    "author": "Factual News",
-    "date": "2025-10-09",
-    "summary": "AI Stuff",
+    "author": "Gervigreindar ritið",
+    "date": "2025-10-10",
+    "summary": "Breytingar og áhrif gervigreindar í fjölmiðlum",
     "collections": ["home"],
     "featured": false,
     "cardImage": {
-      "src": "images/thinkingrobot.jpg",
-      "alt": "Thinking robot"
+      "src": "images/article_four_head.png",
+      "alt": "Alt Text"
     },
     "heroImage": null,
     "blocks": [
@@ -80,9 +81,9 @@ const ARTICLE_DATA = [
   {
     "id": "article-open-five",
     "title": "Trump",
-    "author": "Factual News",
+    "author": "Gervigreindar ritið",
     "date": "2025-10-09",
-    "summary": "Political campaigns lean on AI-enhanced media to control narratives.",
+    "summary": "Mikil notkun gervigreindar af forseta Bandaríkjanna",
     "collections": ["home"],
     "featured": false,
     "cardImage": {
@@ -105,13 +106,13 @@ const ARTICLE_DATA = [
   {
     "id": "extra-open-zero",
     "title": "Ást á tímum gervigreindar",
-    "author": "Factual News",
+    "author": "Gervigreindar ritið",
     "date": "2025-10-18",
-    "summary": "Summary",
+    "summary": "Gervigreindar kærustur og vinir sem eru ekki til",
     "collections": ["extras"],
     "featured": false,
     "cardImage": {
-      "src": "images/thinkingrobot.jpg",
+      "src": "images/extra_zero_head.png",
       "alt": "Image alt"
     },
     "heroImage": null,
@@ -124,13 +125,13 @@ const ARTICLE_DATA = [
   {
     "id": "extra-open-one",
     "title": "Kynferðisleg áreitni eða hvað?",
-    "author": "Factual News",
-    "date": "2025-10-18",
-    "summary": "Summary",
+    "author": "Gervigreindar ritið",
+    "date": "2025-10-17",
+    "summary": "Hvernig gervigreindin særir eða hjálpar",
     "collections": ["extras"],
     "featured": false,
     "cardImage": {
-      "src": "images/thinkingrobot.jpg",
+      "src": "images/extra_one_head.png",
       "alt": "Image alt"
     },
     "heroImage": null,
@@ -145,8 +146,8 @@ const ARTICLE_DATA = [
   {
     "id": "extra-open-two",
     "title": "Sami gamli fegurðarstaðallinn?",
-    "author": "Factual News",
-    "date": "2025-10-18",
+    "author": "Gervigreindar ritið",
+    "date": "2025-10-16",
     "summary": "Gervigreindar „leikkonan” sem setti allt á hvolf í Hollywood og hérlendis",
     "collections": ["extras"],
     "featured": false,
@@ -167,14 +168,14 @@ const ARTICLE_DATA = [
   },
   {
     "id": "extra-open-three",
-    "title": "Fullkomnar röddin",
-    "author": "Factual News",
-    "date": "2025-10-18",
-    "summary": "Summary description",
+    "title": "Fullkomna röddin",
+    "author": "Gervigreindar ritið",
+    "date": "2025-10-15",
+    "summary": "Þróun tölvuradda kvenna í gegnum árin",
     "collections": ["extras"],
     "featured": false,
     "cardImage": {
-      "src": "images/thinkingrobot.jpg",
+      "src": "images/extra_three_head.png",
       "alt": "Image alt"
     },
     "heroImage": null,
@@ -187,13 +188,13 @@ const ARTICLE_DATA = [
   {
     "id": "extra-open-four",
     "title": "List eða þjófnaður?",
-    "author": "Factual News",
-    "date": "2025-10-18",
-    "summary": "Summary description",
+    "author": "Gervigreindar ritið",
+    "date": "2025-10-14",
+    "summary": "Eru gervigreindar myndir bara tilfinningalausar eftirhermur?",
     "collections": ["extras"],
     "featured": false,
     "cardImage": {
-      "src": "images/thinkingrobot.jpg",
+      "src": "images/extra_four_head.png",
       "alt": "Image alt"
     },
     "heroImage": null,
@@ -206,8 +207,8 @@ const ARTICLE_DATA = [
   {
     "id": "extra-open-five",
     "title": "Aðdáendur ekki sáttir með hræsni Taylor Swift",
-    "author": "Factual News",
-    "date": "2025-10-18",
+    "author": "Gervigreindar ritið",
+    "date": "2025-10-13",
     "summary": "Summary description",
     "collections": ["extras"],
     "featured": false,
@@ -226,13 +227,13 @@ const ARTICLE_DATA = [
   {
     "id": "extra-open-six",
     "title": "Myndbönd sem valda vonbrigðum",
-    "author": "Factual News",
-    "date": "2025-10-18",
-    "summary": "Summary description",
+    "author": "Gervigreindar ritið",
+    "date": "2025-10-12",
+    "summary": "Jake Paul að auglýsa Sora og kanínurnar sem hoppuðu á trampólíni",
     "collections": ["extras"],
     "featured": false,
     "cardImage": {
-      "src": "images/thinkingrobot.jpg",
+      "src": "images/extra_six_head.png",
       "alt": "Image alt"
     },
     "heroImage": null,

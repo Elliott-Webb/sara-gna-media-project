@@ -27,6 +27,8 @@ body{
   font: inherit; 
   color: rgb(0, 0, 0); 
   cursor: pointer;
+  text-align: left;
+  vertical-align: text-top;
 }
 
 /* Optional: Add hover state for a more interactive feel */
@@ -100,6 +102,8 @@ body{
 .news .summary{color:var(--muted);margin:0}
 
 .sidebar .widget{background:var(--paper);padding:0.75rem;border:1px solid #efe9df;margin-bottom:1rem}
+.widget ul {list-style-type: disc;}
+.widget li {margin:0 0 0.5rem;font-family:Georgia,serif;font-weight: bold;}
 .sidebar h3{margin:0 0 0.5rem;font-family: Arial, Helvetica, sans-serif}
 .newsletter{display:flex;gap:0.5rem}
 .newsletter input{flex:1;padding:0.5rem;border:1px solid #ddd}

@@ -8,7 +8,7 @@
   <style>
     .game-container{padding:2rem 1rem;text-align:center}
     #statement{font-size:1.25rem;margin:1rem auto;max-width:60ch}
-    .img-wrap{display:flex;justify-content:center;margin:1rem 0}
+    .img-wrap{display:flex;justify-content:center;margin:1rem 0;max-height:740px}
     #prompt-img{width:100%;max-width:520px;height:auto;border:1px solid #ddd;border-radius:8px}
     #message{min-height:1.25rem;margin-top:0.75rem;font-weight:700}
     #controls{margin-top:1rem}
@@ -22,7 +22,7 @@
       <div class="branding">
         <img class="masthead-logo" src="images/site_logo.png" alt="Game logo">
         <div class="brand-group">
-          <a class="brand" href="index.html">Gervigreind Post</a>
+          <a class="brand" href="index.html">Gervigreindar ritið</a>
           <div class="tagline">Satt eða ósatt</div>
         </div>
       </div>
@@ -39,23 +39,24 @@
     </div>
 
     <div id="message" aria-live="polite"></div>
+    
 
     <div id="statement" role="heading" aria-level="2"></div>
-    <div class="img-wrap">
-      <img id="prompt-img" src="" alt="Prompt image">
-    </div>
-
     <div id="controls">
-      <button id="btn-true" class="btn">Satt</button>
-      <button id="btn-false" class="btn" style="margin-left:0.5rem">Rangt</button>
+      <button id="btn-true" class="btn">AI</button>
+      <button id="btn-false" class="btn" style="margin-left:0.5rem">Alvöru</button>
       <button id="skip" class="btn" style="margin-left:0.75rem">Næst</button>
       <button id="view-answers" class="btn" style="display:none;margin-left:0.5rem">Skoða svör</button>
     </div>
+    <div class="img-wrap">
+      <img id="prompt-img" src="" alt="Prompt image">
+    </div>
+    
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span>Gervigreind Post.</p>
+      <p>&copy; <span id="year"></span>Gervigreindar ritið.</p>
     </div>
   </footer>
 
@@ -68,12 +69,42 @@
     </div>
   </div>
   <script>
-    window.quizStatement = 'Er þetta gervigreind framleitt?';
+    window.quizStatement = 'Er þetta framleitt af gervigreind?';
     window.itemsData = [
-      { src: 'images/logo.png', correct: false },
-      { src: 'images/thinkingrobot.jpg', correct: true },
-      { src: 'images/site_logo.png', correct: false },
-      { src: 'images/gervi.png', correct: true }
+      { src: 'images/game/Real 13.jpg', correct: false },
+      { src: 'images/game/AI 4.png', correct: true },
+      { src: 'images/game/AI 3.png', correct: true },
+       { src: 'images/game/AI 1.png', correct: true },
+      { src: 'images/game/Real 7.png', correct: false },
+      { src: 'images/game/Real 10.png', correct: false },
+      { src: 'images/game/AI 5.png', correct: true },
+      { src: 'images/game/AI 7.png', correct: true },
+      { src: 'images/game/AI 12.png', correct: true },
+      { src: 'images/game/Real 16.jpg', correct: false },
+      { src: 'images/game/AI 10.png', correct: true },
+      { src: 'images/game/Real 1.png', correct: false },
+      { src: 'images/game/AI 11.png', correct: true },
+      { src: 'images/game/Real 12.png', correct: false },
+      { src: 'images/game/AI 14.jpg', correct: true },
+      { src: 'images/game/AI 16.jpg', correct: true },
+      { src: 'images/game/Real 15.jpg', correct: false },
+      { src: 'images/game/Real 2.png', correct: false },
+      { src: 'images/game/AI 8.png', correct: true },
+      { src: 'images/game/Real 8.png', correct: false },
+      { src: 'images/game/Real 4.png', correct: false },
+      { src: 'images/game/AI 9.png', correct: true },
+      { src: 'images/game/Real 11.png', correct: false },
+      { src: 'images/game/AI 13.jpg', correct: true },
+      { src: 'images/game/Real 9.png', correct: false },
+      { src: 'images/game/AI 2.png', correct: true },
+      { src: 'images/game/AI 15.jpg', correct: true },
+      { src: 'images/game/Real 3.png', correct: false },
+      { src: 'images/game/AI 6.png', correct: true },
+      { src: 'images/game/Real 5.png', correct: false },
+      { src: 'images/game/Real 6.png', correct: false },
+      { src: 'images/game/Real 17.png', correct: false },
+      { src: 'images/game/Real 14.jpg', correct: false },
+      
     ];
   </script>
   <script src="js/game.js"></script>
