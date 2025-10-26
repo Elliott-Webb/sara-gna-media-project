@@ -292,11 +292,42 @@ function setupNavToggle() {
   const button = document.querySelector('.nav-toggle');
   const nav = document.getElementById('main-nav');
   if (!button || !nav) return;
+  const mobileQuery = window.matchMedia('(max-width: 900px)');
+  const applyExpandedState = (expanded) => {
+    button.setAttribute('aria-expanded', String(expanded));
+    nav.classList.toggle('show', expanded);
+    if (mobileQuery.matches) {
+      if (expanded) {
+        nav.removeAttribute('hidden');
+      } else {
+        nav.setAttribute('hidden', '');
+      }
+    } else {
+      nav.removeAttribute('hidden');
+    }
+  };
+  const handleMediaChange = () => {
+    if (mobileQuery.matches) {
+      if (button.getAttribute('aria-expanded') !== 'true') {
+        nav.setAttribute('hidden', '');
+      }
+    } else {
+      nav.removeAttribute('hidden');
+      nav.classList.remove('show');
+      button.setAttribute('aria-expanded', 'false');
+    }
+  };
+  applyExpandedState(false);
   button.addEventListener('click', function () {
     const expanded = this.getAttribute('aria-expanded') === 'true';
-    this.setAttribute('aria-expanded', String(!expanded));
-    nav.classList.toggle('show');
+    applyExpandedState(!expanded);
   });
+  if (typeof mobileQuery.addEventListener === 'function') {
+    mobileQuery.addEventListener('change', handleMediaChange);
+  } else if (typeof mobileQuery.addListener === 'function') {
+    mobileQuery.addListener(handleMediaChange);
+  }
+  handleMediaChange();
 }
 
 function setupContactForm() {

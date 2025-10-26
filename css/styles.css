@@ -114,7 +114,8 @@ body{
 /* Responsive */
 @media (max-width:900px){
   .hero-grid,.layout{grid-template-columns:1fr}
-  .nav{display:none}
+  .nav{display:none;flex-direction:column;gap:0.5rem;padding:0.5rem 1rem}
+  .nav.show{display:flex}
   .nav-toggle{display:inline-block}
   .masthead-inner{gap:0.5rem}
   .masthead-logo{width:48px;height:48px}
