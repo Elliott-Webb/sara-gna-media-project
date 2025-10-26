@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Extras</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="extras">
+  <header class="masthead">
+    <div class="container masthead-inner">
+      <div class="branding">
+        <img class="masthead-logo" src="images/site_logo.png" alt="site logo">
+        <div class="brand-group">
+          <a class="brand" href="index.html">Gervigreind Post</a>
+          <div class="tagline">Article Extras</div>
+        </div>
+      </div>
+      <div class="masthead-right">
+        <div class="today" aria-hidden="true" id="today"></div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Matseðill</button>
+      </div>
+    </div>
+    <nav id="main-nav" class="nav container">
+      <a href="index.html">Heim</a>
+      <a href="#extras">Aukahlutir</a>
+    </nav>
+  </header>
+    
+  <main>
+    <section id="extras" class="container layout">
+      <div class="main-col">
+        <h2>Fleiri greinar</h2>
+        <div id="articles-container" class="articles-container">
+          <p>Issue loading stories.</p>
+        </div>
+      </div>
+      <aside class="sidebar">
+        <section class="widget">
+          <h3>Lesið einnig</h3>
+          <ol id="most-read-list">
+            <li><span>Loading&hellip;</span></li>
+          </ol>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Gervigreind Post</p>
+    </div>
+  </footer>
+  <div id="features-modal"
+    style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;z-index:1200">
+    <div id="modal-surface"
+      style="background:#fff;padding:1rem;border-radius:8px;max-width:750px;width:95%;max-height:90vh;overflow:auto;position:relative">
+      <button id="features-close" style="position:absolute;right:0.75rem;top:0.5rem;">Close</button>
+      <article class="featured">
+        <div class="featured-media" aria-hidden="true">
+          <img id="modal-image" src="" alt="article image of the story">
+        </div>
+        <h1 class="brand" id="modal-header"></h1>
+        <div id="modal-content"></div>
+      </article>
+    </div>
+  </div>
+
+  <script defer src="js/script.js"></script>
+
+</body>
+</html>

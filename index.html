@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gervigreind Post">
+  <meta name="theme-color" content="#0f172a">
+  <title>Gervigreind Post</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body data-page="home">
+  <header class="masthead">
+    <div class="container masthead-inner">
+      <div class="branding">
+        <img class="masthead-logo" src="images/site_logo.png" alt="Gervigreind Post logo">
+        <div class="brand-group">
+          <a class="brand" href="#">Gervigreind Post</a>
+          <div class="tagline">The independent news source home</div>
+        </div>
+      </div>
+      <div class="masthead-right">
+        <div class="today" aria-hidden="true" id="today"></div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Matseðill</button>
+      </div>
+    </div>
+    <nav id="main-nav" class="nav container">
+      <a href="#home">Heim</a>
+      <a href="extras.html">Aukahlutir</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <article class="featured" id="featured-article">
+          <p>Issue loading stories.</p>
+        </article>
+        <aside class="sidebar">
+          <section class="widget">
+            <h3>Valið okkar</h3>
+            <a href="game.html" rel="noopener">BREAKING: Try our true or false game!</a>
+          </section>
+          <section class="widget">
+            <h3>Mest lesið</h3>
+            <ol id="most-read-list">
+              <li><span>Loading&hellip;</span></li>
+            </ol>
+          </section>
+          <section class="widget">
+            <h3>Gerast áskrifandi fyrir frekari fréttir</h3>
+            <form id="newsletter" class="newsletter" onsubmit="event.preventDefault(); alert('Subscribed (wake up!)')">
+              <label for="newsletter-email" class="visually-hidden">Email</label>
+              <input id="newsletter-email" type="email" placeholder="Email address" required>
+              <button class="btn" type="submit">Skrá sig</button>
+            </form>
+          </section>
+        </aside>
+      </div>
+    </section>
+
+    <section id="features" class="container layout">
+      <div class="main-col">
+        <h2>Greinar</h2>
+                <div id="articles-container" class="articles-container">
+          <p>Issue loading stories.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>Hvað er gervigreind?</h2>
+      <p>Hvað er gervigreind?
+        Gervigreind er oftast sögð vera sú tækni sem líkt getur eftir mannlegri greind. Þessi tæki eru þróuð til þess að
+        geta dregið saman aðalatriði, rýnt í merkingu, fært rök fyrir máli sínu og að læra af fyrri reynslu en þrátt
+        fyrir það hefur þeim aldrei tekist fullkomnlega að ná þeim sveigjanleika sem alvöru mannlegur hugur býr yfir.
+        Hinsvegar eru til dæmi um gervigeindarforrit sem hafa náð sömu hæfni og sérfræðingar á ákveðnum sviðum. Svið þar
+        sem finna mætti vel þróaða gervigreind eru t.d. leitarvélar, spjallmenni, ritunar og radd greining og ákveðnir
+        þættir sem aðstoð við greiningu ákveðinna sjúkdóma. Þetta hugtak hefur verið til í mörg ár og verið í þróun frá
+        því í kringum 1950 þó svo það hafi ekki tekið almennilega á flug fyrr en á seinustu árum.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Gervigreind Post</p>
+    </div>
+  </footer>
+
+  <div id="features-modal"
+    style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;z-index:1200">
+    <div id="modal-surface"
+      style="background:#fff;padding:1rem;border-radius:8px;max-width:750px;width:95%;max-height:90vh;overflow:auto;position:relative">
+      <button id="features-close" style="position:absolute;right:0.75rem;top:0.5rem;">Close</button>
+      <article class="featured">
+        <div class="featured-media" aria-hidden="true">
+          <img id="modal-image" src="" alt="article image of the story">
+        </div>
+        <h1 class="brand" id="modal-header"></h1>
+        <div id="modal-content"></div>
+      </article>
+    </div>
+  </div>
+</body>
+<script defer src="js/script.js"></script>
+
+</html>

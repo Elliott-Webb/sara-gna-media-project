@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Satt eða ósatt</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .game-container{padding:2rem 1rem;text-align:center}
+    #statement{font-size:1.25rem;margin:1rem auto;max-width:60ch}
+    .img-wrap{display:flex;justify-content:center;margin:1rem 0}
+    #prompt-img{width:100%;max-width:520px;height:auto;border:1px solid #ddd;border-radius:8px}
+    #message{min-height:1.25rem;margin-top:0.75rem;font-weight:700}
+    #controls{margin-top:1rem}
+    .btn{padding:0.5rem 0.75rem}
+    .answers-list{font-family: Arial, Helvetica, sans-serif}
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="container masthead-inner">
+      <div class="branding">
+        <img class="masthead-logo" src="images/site_logo.png" alt="Game logo">
+        <div class="brand-group">
+          <a class="brand" href="index.html">Gervigreind Post</a>
+          <div class="tagline">Satt eða ósatt</div>
+        </div>
+      </div>
+    </div>
+    <nav id="main-nav" class="nav container">
+      <a href="index.html">Heim</a>
+      <a href="extras.html">Aukahlutir</a>
+    </nav>
+  </header>
+
+  <main class="container game-container">
+    <div id="score-wrap" style="display:none">
+      Lokatölur: <strong id="score">0</strong> / <strong id="total">0</strong>
+    </div>
+
+    <div id="message" aria-live="polite"></div>
+
+    <div id="statement" role="heading" aria-level="2"></div>
+    <div class="img-wrap">
+      <img id="prompt-img" src="" alt="Prompt image">
+    </div>
+
+    <div id="controls">
+      <button id="btn-true" class="btn">Satt</button>
+      <button id="btn-false" class="btn" style="margin-left:0.5rem">Rangt</button>
+      <button id="skip" class="btn" style="margin-left:0.75rem">Næst</button>
+      <button id="view-answers" class="btn" style="display:none;margin-left:0.5rem">Skoða svör</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span>Gervigreind Post.</p>
+    </div>
+  </footer>
+
+  <!-- Answers modal (simple list) -->
+  <div id="answers-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;z-index:1200">
+    <div style="background:#fff;padding:1rem;border-radius:8px;max-width:900px;width:95%;max-height:90vh;overflow:auto;position:relative">
+      <button id="answers-close" style="position:absolute;right:0.75rem;top:0.5rem;">Loka</button>
+      <h3 style="text-align:center;margin:0 0 .75rem">Rétt svör</h3>
+      <ol id="answers-list" class="answers-list" style="padding-left:1.25rem;margin:0 0 .5rem"></ol>
+    </div>
+  </div>
+  <script>
+    window.quizStatement = 'Er þetta gervigreind framleitt?';
+    window.itemsData = [
+      { src: 'images/logo.png', correct: false },
+      { src: 'images/thinkingrobot.jpg', correct: true },
+      { src: 'images/site_logo.png', correct: false },
+      { src: 'images/gervi.png', correct: true }
+    ];
+  </script>
+  <script src="js/game.js"></script>
+</body>
+</html>
