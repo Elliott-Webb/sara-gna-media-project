@@ -209,7 +209,7 @@ const ARTICLE_DATA = [
     "title": "Aðdáendur ekki sáttir með hræsni Taylor Swift",
     "author": "Gervigreindar ritið",
     "date": "2025-10-13",
-    "summary": "Summary description",
+    "summary": "Notkun gervigreindar til að auglýsa The life of a showgirl",
     "collections": ["extras"],
     "featured": false,
     "cardImage": {
